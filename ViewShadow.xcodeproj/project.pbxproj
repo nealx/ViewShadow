@@ -22,6 +22,8 @@
 		79E4FC151874F84200067B6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E4FBF41874F84200067B6F /* UIKit.framework */; };
 		79E4FC1D1874F84300067B6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E4FC1B1874F84300067B6F /* InfoPlist.strings */; };
 		79E4FC1F1874F84300067B6F /* ViewShadowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E4FC1E1874F84300067B6F /* ViewShadowTests.m */; };
+		79E4FC2A1874F8A500067B6F /* ViewShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E4FC291874F8A500067B6F /* ViewShadow.m */; };
+		79E4FC2C1875000B00067B6F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E4FC2B1875000B00067B6F /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		79E4FC1A1874F84300067B6F /* ViewShadowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewShadowTests-Info.plist"; sourceTree = "<group>"; };
 		79E4FC1C1874F84300067B6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79E4FC1E1874F84300067B6F /* ViewShadowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewShadowTests.m; sourceTree = "<group>"; };
+		79E4FC281874F8A500067B6F /* ViewShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewShadow.h; sourceTree = "<group>"; };
+		79E4FC291874F8A500067B6F /* ViewShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewShadow.m; sourceTree = "<group>"; };
+		79E4FC2B1875000B00067B6F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,8 @@
 				79E4FC051874F84200067B6F /* Main_iPad.storyboard */,
 				79E4FC081874F84200067B6F /* ViewController.h */,
 				79E4FC091874F84200067B6F /* ViewController.m */,
+				79E4FC281874F8A500067B6F /* ViewShadow.h */,
+				79E4FC291874F8A500067B6F /* ViewShadow.m */,
 				79E4FC0B1874F84200067B6F /* Images.xcassets */,
 				79E4FBF71874F84200067B6F /* Supporting Files */,
 			);
@@ -129,6 +136,7 @@
 		79E4FBF71874F84200067B6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				79E4FC2B1875000B00067B6F /* 1.png */,
 				79E4FBF81874F84200067B6F /* ViewShadow-Info.plist */,
 				79E4FBF91874F84200067B6F /* InfoPlist.strings */,
 				79E4FBFC1874F84200067B6F /* main.m */,
@@ -235,6 +243,7 @@
 				79E4FC0C1874F84200067B6F /* Images.xcassets in Resources */,
 				79E4FC041874F84200067B6F /* Main_iPhone.storyboard in Resources */,
 				79E4FBFB1874F84200067B6F /* InfoPlist.strings in Resources */,
+				79E4FC2C1875000B00067B6F /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E4FC2A1874F8A500067B6F /* ViewShadow.m in Sources */,
 				79E4FC0A1874F84200067B6F /* ViewController.m in Sources */,
 				79E4FC011874F84200067B6F /* AppDelegate.m in Sources */,
 				79E4FBFD1874F84200067B6F /* main.m in Sources */,
@@ -388,9 +398,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewShadow/ViewShadow-Prefix.pch";
 				INFOPLIST_FILE = "ViewShadow/ViewShadow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -401,9 +413,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewShadow/ViewShadow-Prefix.pch";
 				INFOPLIST_FILE = "ViewShadow/ViewShadow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

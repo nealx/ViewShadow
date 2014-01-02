@@ -20,22 +20,22 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIView *colorv = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    colorv.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:colorv];
-    [colorv release];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    imageView.image  = [UIImage imageNamed:@"1.png"];
+    [self.view addSubview:imageView];
+    [imageView release];
     
     ViewShadow *v = [[ViewShadow alloc] initWithFrame:CGRectMake(100, 200, 100, 5)];
     v.type = 1;
     [self.view addSubview:v];
     [v release];
     
-    colorv = [[UIView alloc] initWithFrame:CGRectMake(200, 100, 100, 100)];
-    colorv.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:colorv];
-    [colorv release];
+    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(250, 100, 100, 100)];
+    imageView.image  = [UIImage imageNamed:@"1.png"];
+    [self.view addSubview:imageView];
+    [imageView release];
     
-    v = [[ViewShadow alloc] initWithFrame:CGRectMake(200, 200, 100, 5)];
+    v = [[ViewShadow alloc] initWithFrame:CGRectMake(250, 200, 100, 3)];
     v.type = 0;
     [self.view addSubview:v];
     [v release];
