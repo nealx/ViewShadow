@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79CF29C71876E9820011E3A6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		79CF29C81876E9BE0011E3A6 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		79E4FBED1874F84200067B6F /* ViewShadow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewShadow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E4FBF01874F84200067B6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79E4FBF21874F84200067B6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,6 +91,8 @@
 		79E4FBE41874F84200067B6F = {
 			isa = PBXGroup;
 			children = (
+				79CF29C81876E9BE0011E3A6 /* sample.png */,
+				79CF29C71876E9820011E3A6 /* README.md */,
 				79E4FBF61874F84200067B6F /* ViewShadow */,
 				79E4FC181874F84300067B6F /* ViewShadowTests */,
 				79E4FBEF1874F84200067B6F /* Frameworks */,
@@ -482,6 +486,7 @@
 				79E4FC241874F84300067B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79E4FC251874F84300067B6F /* Build configuration list for PBXNativeTarget "ViewShadowTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				79E4FC271874F84300067B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

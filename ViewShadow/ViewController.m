@@ -39,6 +39,16 @@
     v.type = 0;
     [self.view addSubview:v];
     [v release];
+    
+    imageView = [[UIImageView alloc] initWithFrame:CGRectMake(420, 140, 60, 60)];
+    imageView.image  = [UIImage imageNamed:@"1.png"];
+    [self.view addSubview:imageView];
+    [imageView release];
+    
+    v = [[ViewShadow alloc] initWithFrame:CGRectMake(400, 200, 100, 18)];
+    v.type = 2;
+    [self.view addSubview:v];
+    [v release];
 }
 
 - (void)didReceiveMemoryWarning
